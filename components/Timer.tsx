@@ -9,10 +9,10 @@ export const Timer = () => {
     setTimeout(
       () =>
         setTime((state) => {
-          const oldMinute = state.getMinutes()
-          const newMinute = new Date().getMinutes()
-          if (newMinute % 3 && newMinute !== oldMinute) {
-            ref.current?.play()
+          const oldMinute = state.getMinutes();
+          const newMinute = new Date().getMinutes();
+          if (newMinute % 2 === 0 && newMinute !== oldMinute) {
+            ref.current?.play();
           }
           return new Date();
         }),
