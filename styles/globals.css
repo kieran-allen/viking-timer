@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+@font-face {
+    font-family: 'Norse';
+    src: url('/fonts/Norse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-stone-800 text-stone-100;
+  }
+}
